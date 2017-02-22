@@ -17,26 +17,26 @@
 	</head>
 	<body>
 		<center>
-			<h1>Kalkulator ubezpieczenia</h1><hr>
+			<h1>Kalkulator składki ubezpieczeniowej</h1><hr>
 			<div id="kalkulator">
+				<p>Jeśli nastąpiła szkoda proszę zaznaczyć opcję Szkoda</p>
+				<div class="checkbox">
+    						<label><input type="checkbox" value="" id="szkoda">Szkoda</label>
+  					</div>
+  					<p>Jeśli płatność ma być rozłożona na raty proszę zaznaczyć opcję Raty</p>
+			   <div class="checkbox">
+			   		<label><input type="checkbox" value="" id="raty">Raty</label>
+			  	</div>
 				<p>Wprowadź sumę ubezpieczenia</p>
 				<form>
 					<div class="form-group">
 						<label for="sumaUbezp">Suma ubezpieczenia:</label> 
-						<input type="number" class="form-control" min="100" max="10000" value="" id="sumaUbezp">&nbsp;PLN&nbsp;
+						<input type="number" min="100" max="10000" value="" id="sumaUbezp">&nbsp;PLN&nbsp;
 						<button type="button" class="btn btn-primary" id = "button" onclick="oblicz()">OBLICZ</button>
-						<p>Jeśli nastąpiła szkoda proszę zaznaczyć opcję Szkoda</p>
-						<div class="checkbox">
-      						<label><input type="checkbox" value="" id="szkoda">Szkoda</label>
-    					</div>
-    					<p>Jeśli płatność ma być rozłożona na raty proszę zaznaczyć opcję Raty</p>
-					   <div class="checkbox">
-					   		<label><input type="checkbox" value="" id="raty">Raty</label>
-					  	</div>
 					</div>
 				</form>
-				<br><br>
-				<h4>Dla wprowadzonej kwoty składka ubezpieczenia wyniesie:</h4>
+				<br>
+				<p>Dla wprowadzonej kwoty składka ubezpieczenia wyniesie:</p>
 				<h4 id="result">
 					&nbsp;
 				</h4>
