@@ -1,9 +1,17 @@
+div
+{
+	width: 540px;
+	border: 25px solid orange;
+	padding: 25px;
+	margin: 25px;
+}
+
 #result
 {
 	color: #85144b;
 }
 
-#kalkulator
+#calc
 {
 	background-color: #7FDBFF;
 }

@@ -47,7 +47,8 @@ function obliczSkladke(sumaUbezp, szkoda, raty)
 	{
 		skladkaUbezp *= 0.98;
 	}
-	var temp = sumaUbezp;
+
+	var temp = skladkaUbezp;
 	skladkaUbezp = Math.round(skladkaUbezp);
 	if(temp > skladkaUbezp)
 	{
@@ -88,9 +89,9 @@ function ratyf()
 
 function oblicz()
 {
-    var e = document.getElementById("sumaUbezp");
-    var szkoda = szkodaf();
-    var raty = ratyf();
-    t = parseInt(e.value);
-	document.getElementById("result").innerHTML = obliczSkladke(t, szkoda, raty);
+	var sumaUbezp = document.getElementById("sumaUbezp");
+	var szkoda = szkodaf();
+	var raty = ratyf();
+	sumaUbezpI = parseInt(sumaUbezp.value);
+	document.getElementById("result").innerHTML = obliczSkladke(sumaUbezpI, szkoda, raty);
 }
